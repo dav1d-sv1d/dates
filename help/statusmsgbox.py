@@ -1,0 +1,2 @@
+class StatusMessageBox:
+    status = False

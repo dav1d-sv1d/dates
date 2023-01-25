@@ -1,0 +1,28 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource>
+        <file>images\back.png</file>
+        <file>images\developer.png</file>
+        <file>images\help.png</file>
+        <file>images\question.png</file>
+        <file>images\select_theme.png</file>
+        <file>images\settings.png</file>
+        <file>images\uncorrect.png</file>
+        <file>images\correct.png</file>
+        <file>images\settings_test.png</file>
+        <file>images\leave.png</file>
+        <file>images\hide.png</file>
+        <file>images\show.png</file>
+        <file>images\next.png</file>
+        <file>images\complete.png</file>
+        <file>images\switch_on.png</file>
+        <file>images\switch_off.png</file>
+        <file>images\settings_question.png</file>
+        <file>images\fold_window.png</file>
+        <file>images\expand_off.png</file>
+        <file>images\expand_on.png</file>
+        <file>images\close_window.png</file>
+        <file>hs.ico</file>
+    </qresource>
+</RCC>
+

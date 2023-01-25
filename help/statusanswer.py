@@ -1,0 +1,2 @@
+class StatusAnswer:
+    status = False

@@ -1,0 +1,2135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow_2</class>
+ <widget class="QMainWindow" name="MainWindow_2">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>425</width>
+    <height>649</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>425</width>
+    <height>649</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(40, 42, 54);
+
+</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QScrollBar:vertical {
+	border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 7px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 0px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 0px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="header_frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="close_window">
+       <property name="geometry">
+        <rect>
+         <x>396</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #ABABAB;
+}
+
+QPushButton:pressed {
+	background-color: #C5C5C5;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../photo.qrc">
+         <normaloff>:/images/close_window.png</normaloff>:/images/close_window.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>15</width>
+         <height>15</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="minimize_window">
+       <property name="geometry">
+        <rect>
+         <x>365</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #ABABAB;
+}
+
+QPushButton:pressed {
+	background-color: #C5C5C5;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../photo.qrc">
+         <normaloff>:/images/fold_window.png</normaloff>:/images/fold_window.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="icon">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>30</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../photo.qrc">
+         <normaloff>:/hs.ico</normaloff>:/hs.ico</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="background_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>405</width>
+         <height>605</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> QScrollBar:vertical {
+	border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 7px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 0px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 0px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-3863</y>
+          <width>391</width>
+          <height>4468</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="background">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>4450</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(40, 42, 54);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="background_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>110</y>
+              <width>361</width>
+              <height>72</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #df6277;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="text_3">
+             <property name="geometry">
+              <rect>
+               <x>18</x>
+               <y>1</y>
+               <width>321</width>
+               <height>67</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Tahoma</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;</string>
+             </property>
+             <property name="text">
+              <string>ВІД НАЙДІВНІШИХ ЧАСІВ ДО
+ПЕРШОЇ ПОЛОВИНИ XVI СТ.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="theme_1">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>200</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>СТАРОДАВНЯ ІСТОРІЯ
+УКРАЇНИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>380</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>КОРОЛІВСТВО РУСЬКЕ.
+МОНГОЛЬСЬКА НАВАЛА</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>470</y>
+              <width>361</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>РУСЬКІ КНЯЗІВСТВА ДРУГОЇ
+ПОЛОВИНИ XIV — ПЕРШОЇ
+ПОЛОВИНИ XVI СТ.
+КРИМСЬКЕ ХАНСТВО</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>290</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>РУСЬ-УКРАЇНА:
+КИЇВСЬКА ДЕРЖАВА</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="background_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>700</y>
+              <width>361</width>
+              <height>72</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #df6277;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="text_4">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>1</y>
+               <width>321</width>
+               <height>67</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Tahoma</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;</string>
+             </property>
+             <property name="text">
+              <string>ДРУГА ПОЛОВИНА XVI СТ. — 
+ПЕРША ПОЛОВИНА XVIII СТ.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="Line" name="line">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>640</y>
+              <width>361</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>790</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+РЕЧІ ПОСПОЛИТОЇ В ДРУГІЙ
+ПОЛОВИНІ XVI СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_6">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>910</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+РЕЧІ ПОСПОЛИТОЇ В ПЕРШІЙ
+ПОЛОВИНІ XVII СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_7">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1030</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>НАЦІОНАЛЬНО-ВИЗВОЛЬНА
+ВІЙНА УКРАЇНСЬКОГО
+НАРОДУ СЕРЕДИНИ XVII СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_8">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1150</y>
+              <width>361</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>КОЗАЦЬКА УКРАЇНА
+НАПРИКІНЦІ 50-80-Х РР.
+XVII ст.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_9">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1260</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ
+НАПРИКІНЦІ XVII — В ПЕРШІЙ
+ПОЛОВИНІ XVIII СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_10">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1380</y>
+              <width>361</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ В ДРУГІЙ
+ПОЛОВИНІ XVIII СТ.</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="background_5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1560</y>
+              <width>361</width>
+              <height>72</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #df6277;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="text_5">
+             <property name="geometry">
+              <rect>
+               <x>34</x>
+               <y>1</y>
+               <width>301</width>
+               <height>67</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Tahoma</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;</string>
+             </property>
+             <property name="text">
+              <string>КІНЕЦЬ XVIII СТ. — XIX СТ.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="Line" name="line_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1500</y>
+              <width>361</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_11">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1650</y>
+              <width>361</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+РОСІЙСЬКОЇ ІМПЕРІЇ
+НАПРИКІНЦІ XVIII — У
+ПЕРШІЙ ПОЛОВИНІ XIX СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_12">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1800</y>
+              <width>361</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+АВСТРІЙСЬКОЇ ІМПЕРІЇ
+НАПРИКІНЦІ XVIII — У
+ПЕРШІЙ ПОЛОВИНІ XIX СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_13">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>1950</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>КУЛЬТУРА УКРАЇНИ КІНЦЯ
+XVIII — ПЕРШОЇ ПОЛОВИНИ
+XIX СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_14">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2070</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+РОСІЙСЬКОЇ ІМПЕРІЇ В
+ДРУГІЙ ПОЛОВИНІ XIX СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_15">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2190</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+АВСТРО-УГОРЩИНИ В
+ДРУГІЙ ПОЛОВИНІ XIX СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_16">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2310</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>КУЛЬТУРА УКРАЇНИ В ДРУГІЙ
+ПОЛОВИНІ XIX СТ. — НА
+ПОЧАТКУ XX СТ.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_17">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2430</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+РОСІЙСЬКІЙ ІМПЕРІЇ В
+1900-1914 РР.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_18">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2550</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНСЬКІ ЗЕМЛІ У СКЛАДІ
+АВСТРО-УГОРЩИНИ В
+1900-1914 РР.</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="background_6">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2750</y>
+              <width>361</width>
+              <height>72</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #df6277;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="text_7">
+             <property name="geometry">
+              <rect>
+               <x>106</x>
+               <y>1</y>
+               <width>161</width>
+               <height>67</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Tahoma</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;</string>
+             </property>
+             <property name="text">
+              <string>1914-1945 РР.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="Line" name="line_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2690</y>
+              <width>361</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_19">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2840</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНА В РОКИ ПЕРШОЇ
+СВІТОВОЇ ВІЙНИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_20">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>2930</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>ПОЧАТОК УКРАЇНСЬКОЇ
+РЕВОЛЮЦІЇ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_21">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3020</y>
+              <width>361</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>РОЗГОРТАННЯ УКРАЇНСЬКОЇ
+РЕВОЛЮЦІЇ. БОРОТЬБА
+ЗА ВІДНОВЛЕННЯ
+ДЕРЖАВНОСТІ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_22">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3160</y>
+              <width>361</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>ВСТАНОВЛЕННЯ
+КОМУНІСТИЧНОГО
+ТОТАЛІТАРНОГО РЕЖИМУ
+В УКРАЇНІ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_23">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3310</y>
+              <width>361</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УТВЕРДЖЕННЯ
+БІЛЬШОВИЦЬКОГО
+ТОТАЛІТАРНОГО РЕЖИМУ В
+УКРАЇНІ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_24">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3460</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>ЗАХІДНОУКРАЇНСЬКІ ЗЕМЛІ В
+МІЖВОЄННИЙ ПЕРІОД</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_25">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3550</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНА В РОКИ
+ДРУГОЇ СВІТОВОЇ ВІЙНИ</string>
+            </property>
+           </widget>
+           <widget class="QFrame" name="background_7">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3720</y>
+              <width>361</width>
+              <height>72</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #df6277;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="text_9">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>0</y>
+               <width>311</width>
+               <height>67</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Tahoma</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: white;</string>
+             </property>
+             <property name="text">
+              <string>1945 Р. — ПОЧАТОК XXI СТ.</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+           <widget class="Line" name="line_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3660</y>
+              <width>361</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_26">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3810</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНА В ПЕРШІЇ
+ПОВОЄННІ РОКИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_27">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3900</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНА В УМОВАХ
+ДЕСТАЛІНІЗАЦІЇ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_28">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>3990</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>УКРАЇНА У ПЕРІОД
+ЗАГОСТРЕННЯ КРИЗИ
+РАДЯНСЬКОЇ СИСТЕМИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_29">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>4110</y>
+              <width>361</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>ВІДНОВЛЕННЯ
+НЕЗАЛЕЖНОСТІ
+УКРАЇНИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_30">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>4230</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>СТАНОВЛЕННЯ УКРАЇНИ
+ЯК НЕЗАЛЕЖНОЇ ДЕРЖАВИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="theme_31">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>4320</y>
+              <width>361</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>ТВОРЕННЯ НОВОЇ
+УКРАЇНИ</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="back">
+            <property name="geometry">
+             <rect>
+              <x>240</x>
+              <y>30</y>
+              <width>121</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Tahoma</family>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="toolTipDuration">
+             <number>-1</number>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+color: white;
+border: 2px solid #df6277;
+
+}
+
+QPushButton:hover {
+background-color: #2b2b3e;
+}
+
+QPushButton:pressed {
+background-color: #323248;
+}</string>
+            </property>
+            <property name="text">
+             <string>НАЗАД</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="help">
+   <property name="icon">
+    <iconset resource="../photo.qrc">
+     <normaloff>:/images/help.png</normaloff>:/images/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+  </action>
+  <action name="develop">
+   <property name="icon">
+    <iconset resource="../photo.qrc">
+     <normaloff>:/images/developer.png</normaloff>:/images/developer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Связь с разработчиком</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../photo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
